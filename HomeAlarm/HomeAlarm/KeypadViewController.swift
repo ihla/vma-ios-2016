@@ -9,5 +9,26 @@
 import UIKit
 
 class KeypadViewController: UIViewController {
+    
+    @IBOutlet weak var codeDisplayLabel: UILabel!
+    
+    private var isTypingCode = false
+    
+    @IBAction func addDigit(_ sender: UIButton) {
+        let digit = sender.currentTitle!
+        print("addDigit: \(digit)")
+        if isTypingCode {
+            codeDisplayLabel.text! += digit
+        } else {
+            codeDisplayLabel.text! = digit
+            isTypingCode = true
+        }
+    }
 
+    
+    
+    
+    
+    
+    
 }
