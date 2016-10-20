@@ -12,6 +12,7 @@
 		20E9C5EC1DA67CA500C30D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E9C5EB1DA67CA500C30D44 /* Assets.xcassets */; };
 		20E9C5EF1DA67CA500C30D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E9C5ED1DA67CA500C30D44 /* LaunchScreen.storyboard */; };
 		20E9C5F81DA681DA00C30D44 /* KeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E9C5F71DA681DA00C30D44 /* KeypadViewController.swift */; };
+		20EF6CFE1DB8F2FC00918F15 /* HomeAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EF6CFD1DB8F2FC00918F15 /* HomeAlarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		20E9C5EE1DA67CA500C30D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20E9C5F01DA67CA500C30D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20E9C5F71DA681DA00C30D44 /* KeypadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeypadViewController.swift; sourceTree = "<group>"; };
+		20EF6CFD1DB8F2FC00918F15 /* HomeAlarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAlarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				20E9C5E31DA67CA500C30D44 /* HomeAlarm */,
+				20E9C5F61DA67F6900C30D44 /* SupportingFiles */,
 				20E9C5E21DA67CA500C30D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,9 +57,9 @@
 		20E9C5E31DA67CA500C30D44 /* HomeAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				20E9C5F61DA67F6900C30D44 /* SupportingFiles */,
-				20E9C5E81DA67CA500C30D44 /* Main.storyboard */,
-				20E9C5F71DA681DA00C30D44 /* KeypadViewController.swift */,
+				20EF6CFC1DB8F25700918F15 /* Model */,
+				20EF6CF91DB8F22300918F15 /* View */,
+				20EF6CFB1DB8F24600918F15 /* Controller */,
 			);
 			path = HomeAlarm;
 			sourceTree = "<group>";
@@ -70,6 +73,31 @@
 				20E9C5F01DA67CA500C30D44 /* Info.plist */,
 			);
 			name = SupportingFiles;
+			path = HomeAlarm;
+			sourceTree = "<group>";
+		};
+		20EF6CF91DB8F22300918F15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20E9C5E81DA67CA500C30D44 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		20EF6CFB1DB8F24600918F15 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20E9C5F71DA681DA00C30D44 /* KeypadViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		20EF6CFC1DB8F25700918F15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20EF6CFD1DB8F2FC00918F15 /* HomeAlarm.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +174,7 @@
 			files = (
 				20E9C5F81DA681DA00C30D44 /* KeypadViewController.swift in Sources */,
 				20E9C5E51DA67CA500C30D44 /* AppDelegate.swift in Sources */,
+				20EF6CFE1DB8F2FC00918F15 /* HomeAlarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +336,7 @@
 				20E9C5F51DA67CA500C30D44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
