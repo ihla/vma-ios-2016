@@ -12,7 +12,7 @@ class KeypadViewController: UIViewController {
     lazy var homeAlarm: HomeAlarm = {
         let alarm = HomeAlarm()
         alarm.onError = { text in
-            self.statusDisplayLabel.text = "Incorrect Code"
+            self.statusDisplayLabel.text = text
             self.statusDisplayLabel.textColor = UIColor.red
         }
         alarm.onArmed = {
