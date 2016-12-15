@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonStates" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0M-zJ-22a">
+                                <rect key="frame" x="137" y="283" width="100" height="100"/>
+                                <state key="normal" image="star"/>
+                                <state key="selected" image="star_selected"/>
+                                <state key="highlighted" image="star_highlighted"/>
+                                <connections>
+                                    <action selector="checkButtonState:" destination="BYZ-38-t0r" eventType="touchDown" id="3hc-iJ-jeo"/>
+                                    <action selector="selectStar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eB-bl-gDA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="fSs-Pk-ZRR">
+                                <rect key="frame" x="162" y="399" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="F0M-zJ-22a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1lA-D9-JrU"/>
+                            <constraint firstItem="fSs-Pk-ZRR" firstAttribute="top" secondItem="F0M-zJ-22a" secondAttribute="bottom" constant="16" id="VmZ-he-GZQ"/>
+                            <constraint firstItem="fSs-Pk-ZRR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKI-gJ-Khz"/>
+                            <constraint firstItem="F0M-zJ-22a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dK6-c4-K94"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkedImageView" destination="fSs-Pk-ZRR" id="OVm-Q4-Nds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checked" width="50" height="50"/>
+        <image name="star" width="100" height="100"/>
+        <image name="star_highlighted" width="100" height="100"/>
+        <image name="star_selected" width="100" height="100"/>
+    </resources>
+</document>
